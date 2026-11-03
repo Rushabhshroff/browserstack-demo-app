@@ -1,17 +1,18 @@
 import React from "react";
+import './style.scss';
 
 const Newsletter = () => {
   return (
     <form>
-      <label htmlFor="newsletter-email">Subscribe to newsletter</label>
       <input
         id="newsletter-email"
         name="email-addr"
-        className="border border-gray-300 rounded-md p-2 mx-2"
+        className="inputClr border border-gray-300 p-2 mx-2"
         type="email"
         placeholder="Email"
         required
       />
+      <button type="submit" className="bg-blue-500 text-white p-2">Subscribe to Newsletter</button>
     </form>
   );
 };
